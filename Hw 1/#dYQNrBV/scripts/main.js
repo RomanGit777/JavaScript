@@ -2,7 +2,6 @@ let a = "hello"
 let b = "owu"
 let c = "com"
 let d = "ua"
-let g = "1"
 
 
 let n1 = 1
@@ -18,9 +17,8 @@ let bool2 = false
 
 console.log(a)
 console.log(b)
-console.log(d)
 console.log(c)
-console.log(g)
+console.log(d)
 
 console.log(n1)
 console.log(n2)
