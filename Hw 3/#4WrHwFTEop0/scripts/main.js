@@ -301,33 +301,3 @@ for (const user of users) {
 
 
 
-
-
-
-// <div class='users-box'>
-//
-// <div class='user-block'>
-//
-// <h2>ID – NAME – USERNAME </h2>
-//
-// <h3>EMAIL – PHONE</h3>
-//
-// <div class='address-block'>
-//
-// <p>City – ADDRESS.CITY</p>
-//
-// <p>Street – ADDRESS.STREET</p>
-//
-// <p>Suite – ADDRESS.SUITE</p>
-//
-// <p>Zip code – ADDRESS.ZIPCODE</p>
-//
-// </div>
-//
-// </div>
-//
-// {/*за допомогою стилів, побудувати сітку по 2 об’єктах в рядок**/}
-//
-
-
-
