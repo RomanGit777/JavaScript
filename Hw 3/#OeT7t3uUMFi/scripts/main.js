@@ -1,5 +1,5 @@
 let i = 0;
 while (i < 20) {
-    document.write(`<h1>sdsdssd ${i+1}</h1>`);
+    document.write(`<h1>sdsdssd ${i}</h1>`);
     i++;
 }
