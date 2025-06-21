@@ -6,7 +6,7 @@ let products = [
 
         price: 22,
 
-        image: `https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300×300-3.jpg`
+        image: `https://www.firstchoiceproduce.com/wp-content/uploads/2020/03/whole-milk-800x800.jpg`
 
     },
 
@@ -36,7 +36,7 @@ let products = [
 
         price: 15,
 
-        image: `https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png`
+        image: `https://th.bing.com/th/id/OIP.TMzrhqhf5sBJhcpcSx_O4QHaFj?r=0&o=7rm=3&rs=1&pid=ImgDetMain&cb=idpwebpc2`
 
     },
 
