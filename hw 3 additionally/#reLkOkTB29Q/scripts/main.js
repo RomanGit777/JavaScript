@@ -3,9 +3,7 @@
 //
 //
 //
-// – знайти книжку/ки, які писали 2 автори
 //
-// – знайти книжку/ки, які писав 1 автор
 const books = [
     {
         title: '1984',
@@ -63,4 +61,28 @@ for (let book of books){
 console.log('Найбільша кількість жанрів:', bookWithMostGenres.genres)
 
 // – знайти книжку/ки з найдовшою назвою
+let bookWithBiggestTitle = books[0];
+for (let book of books){
+    if (book.title.length > bookWithBiggestTitle.title.length){
+        bookWithBiggestTitle = book;
+    }
+}
+console.log('Найдовша назва книги:', bookWithBiggestTitle.title);
 
+// – знайти книжку/ки, які писали 2 автори
+let bookWithTwoAuthors = books[0];
+for (let book of books){
+    if (book.authors.length > bookWithTwoAuthors.authors.length){
+        bookWithTwoAuthors = book;
+    }
+}
+console.log('Книжка яку писали 2 автори:', bookWithTwoAuthors.authors);
+
+// – знайти книжку/ки, які писав 1 автор
+let bookWithOneAuthors = books[0];
+for (let book of books){
+    if (book.authors.length === bookWithOneAuthors.authors.length){
+        bookWithOneAuthors = book;
+    }
+}
+console.log('Книжка яку написав один автор:', bookWithOneAuthors.authors)
