@@ -1,10 +1,7 @@
 // створити масив книжок (назва, кількість сторінок, автори , жанри).
 //
-// – знайти найбільшу книжку.
 //
-// – знайти книжку/ки з найбільшою кількістю жанрів
 //
-// – знайти книжку/ки з найдовшою назвою
 //
 // – знайти книжку/ки, які писали 2 автори
 //
@@ -47,3 +44,23 @@ const books = [
         genres: ['hhhhhhhhhhhhhhhh']
     }
 ];
+// – знайти найбільшу книжку.
+let biggestBook = books[0];
+for (let book of books){
+    if (book.pages > biggestBook.pages){
+        biggestBook = book;
+    }
+}
+console.log('Найбільша книга:', biggestBook.pages, 'сторінок');
+
+// – знайти книжку/ки з найбільшою кількістю жанрів
+let bookWithMostGenres = books[0]
+for (let book of books){
+    if (book.genres.length > bookWithMostGenres.genres.length){
+        bookWithMostGenres = book;
+    }
+}
+console.log('Найбільша кількість жанрів:', bookWithMostGenres.genres)
+
+// – знайти книжку/ки з найдовшою назвою
+
