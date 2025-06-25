@@ -58,3 +58,32 @@ for (let i = 0; i < arr.length - 1; i++){
         console.log('Елемент перед парним сусідом:', arr[i]);
     }
 }
+
+// 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
+let purchases = [100,250,50,168,120,345,188];
+let total = 0;
+for (let i = 0; i < purchases.length; i++) {
+    total += purchases[i];
+}
+let average = total / purchases.length;
+console.log('Середній чек:', average.toFixed(2));
+
+// 7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+// let numbers = [4, 11, 27, 8, 15, 3, 20, 6, 13, 9];
+// let multiplied = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     multiplied.push(numbers[i] * 5);
+// }
+// console.log('Вигадані числа:', numbers);
+// console.log('Помножено на 5:', multiplied);
+
+// 8. Створити масив з будь-якими значеннями (стрінги, числа, і тд…). пройтись по ньому, і, якщо елемент є числом, додати його в інший масив.
+let mixed = ['asdasd', true, false, 222, 'tytyyt', 4444, 333, 'fffff', 222]
+let numbers = []
+for (let i = 0; i < mixed.length; i++) {
+   if (typeof mixed[i] === 'number'){
+       numbers.push(mixed[i]);
+   }
+}
+console.log(mixed);
+console.log(numbers);
