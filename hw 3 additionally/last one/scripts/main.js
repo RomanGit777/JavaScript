@@ -81,15 +81,15 @@ console.log('Середній чек:', average.toFixed(2));
 
 // 8. Створити масив з будь-якими значеннями (стрінги, числа, і тд…). пройтись по ньому, і, якщо елемент є числом,
 // додати його в інший масив.
-let mixed = ['asdasd', true, false, 222, 'tytyyt', 4444, 333, 'fffff', 222]
-let numbers = []
-for (let i = 0; i < mixed.length; i++) {
-    if (typeof mixed[i] === 'number') {
-        numbers.push(mixed[i]);
-    }
-}
-console.log(mixed);
-console.log(numbers);
+// let mixed = ['asdasd', true, false, 222, 'tytyyt', 4444, 333, 'fffff', 222]
+// let numbers = []
+// for (let i = 0; i < mixed.length; i++) {
+//     if (typeof mixed[i] === 'number') {
+//         numbers.push(mixed[i]);
+//     }
+// }
+// console.log(mixed);
+// console.log(numbers);
 
 let usersWithId = [
     { id: 1, name: 'vasya', age: 31, status: false },
@@ -118,3 +118,12 @@ for ( let city of citiesWithId){
 }
 }
 console.log(fullUsers);
+
+// – Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+let numbers = [1, 2, 3, 5, 7, 9, 56, 8, 67, 11];
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0){
+        console.log('Парне число:', numbers[i]);
+    }
+
+}
