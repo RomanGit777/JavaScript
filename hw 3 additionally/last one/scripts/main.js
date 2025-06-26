@@ -125,5 +125,39 @@ for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0){
         console.log('Парне число:', numbers[i]);
     }
-
 }
+
+// – Взяти масив з 10 чисел або створити його. Створити 2-й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+let originalArray = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
+let copiedArray = [];
+for (let i = 0; i < originalArray.length; i++){
+    copiedArray.push(originalArray[i]);
+}
+console.log('Оригінал:', originalArray);
+console.log('Копія:', copiedArray);
+
+// – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for зібрати всі букви в слово.
+// let letters = ['a', 'b', 'c'];
+// let word1 = '';
+// for (let i = 0; i < letters.length; i++) {
+//     word1 += letters[i];
+// }
+// console.log('Слово з for:', word1);
+
+// – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу while зібрати всі букви в слово.
+// let letters = ['a', 'b', 'c'];
+// let word2 = '';
+// let index = 0;
+// while ( index < letters.length){
+//     word2 += letters[index];
+//     index++;
+// }
+// console.log('Слово з while:', word2)
+
+// – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for of зібрати всі букви в слово.
+let letters = ['a', 'b', 'c'];
+let word3 = '';
+for (let letter of letters){
+    word3 += letter;
+}
+console.log('Слово з for of:', word3)
