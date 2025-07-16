@@ -24,3 +24,4 @@
 // let split = str.split(' ');
 // console.log(split);
 
+// array function :
