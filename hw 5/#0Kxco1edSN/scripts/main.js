@@ -1,10 +1,11 @@
-const createList = (itemText, count) =>{
-    const ul = document.createElement('ul');
+// #0Kxco1edSN
+// – створити функцію, яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість
+// li визначається другим аргументом, який є числовим (тут використовувати цикл)
+let foo = (text,count) => {
+    document.write(`<ul>`)
     for (let i = 0; i < count; i++) {
-        const li = document.createElement('li');
-        li.textContent = itemText;
-        ul.appendChild(li);
+    document.write(`<li>${text}</li>`)
     }
-    document.body.appendChild(ul);
-};
-createList('Hello world!', 3)
+    document.write(`</ul>`)
+}
+foo('Hello!', 5)

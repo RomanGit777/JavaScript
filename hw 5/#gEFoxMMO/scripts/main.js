@@ -1,13 +1,13 @@
-const createPrimitiveList = (arr) => {
-    const ul = document.createElement('ul');
+// #gEFoxMMO
+// – створити функцію, яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+let arrOfPrimitives = [1,2,3,4,true,false,'string',8,9];
+let foo = (arr) => {
+    document.write(`<ul>`)
 
-    arr.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = String(item); // Перетворюємо будь-який тип у рядок
-        ul.appendChild(li);
-    });
+    for (const item of arr) {
+        document.write(`<li>${item}</li>`)
+    }
 
-    document.body.appendChild(ul);
-};
-
-createPrimitiveList([33,44, true, false, 'sdsdsdds', 77])
+    document.write(`</ul>`)
+}
+foo(arrOfPrimitives);

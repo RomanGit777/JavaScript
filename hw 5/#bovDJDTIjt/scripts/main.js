@@ -1,18 +1,14 @@
-const showUsers = (userArray) => {
-    for (let i = 0; i < userArray.length; i++) {
-        const userBlock = document.createElement('div');
-        userBlock.innerText =
-            'ID: ' + userArray[i].id + '\n' +
-            'Name: ' + userArray[i].name + '\n' +
-            'Age: ' + userArray[i].age;
-        userBlock.style.whiteSpace = 'pre-line';
-        document.body.appendChild(userBlock);
+// #bovDJDTIjt
+// – створити функцію, яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для
+// кожного об'єкту окремий блок.
+let arrayOfUsers = [
+    {id: 1, name: 'John', age: 21},
+    {id: 2, name: 'Johnathan', age: 24},
+    {id: 3, name: 'Ronald', age: 25}
+]
+let arr = (array) => {
+    for (const user of array) {
+        document.write(`<div>${user.id} ${user.name} ${user.age}</div>`)
     }
-};
-const users = [
-    { id: 1, name: 'Ірина', age: 26 },
-    { id: 2, name: 'Максим', age: 34 },
-    { id: 3, name: 'Олександр', age: 19 }
-];
-
-showUsers(users);
+}
+arr(arrayOfUsers);

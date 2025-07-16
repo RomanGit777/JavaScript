@@ -1,2 +1,4 @@
-let squareCilinder = (radius, height) => radius * height;
-console.log(squareCilinder(5,2));
+// #Mbiz5K4yFe7
+// – створити функцію, яка обчислює та повертає площу циліндру висотою h, та радіусом r
+let cylinderArea = (height, radius) => height * radius;
+console.log(cylinderArea(15,10));

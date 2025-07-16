@@ -1,6 +1,11 @@
-let printElements = (arr) => {
-    for (const item of arr) {
-        console.log(item);
+// #SIdMd0hQ
+//– створити функцію, яка приймає масив та виводить кожен його елемент
+let arr = [1,2,3,4,5,6,7,8];
+let logNums = (array) => {
+    for (const num of array) {
+        console.log(num);
     }
 }
-printElements([333, 4444, 777777]);
+logNums(arr);
+
+
