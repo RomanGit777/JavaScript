@@ -25,47 +25,137 @@
 // console.log(split);
 
 // array function :
-let arr = [];
-console.log(Array.isArray(arr)); // перевірка чи є цей масив масивом
-arr.push(123);
-arr.push(44);
-arr.push(44);
-arr.push(44);
-console.log(arr);
-
-console.log(arr.pop()); // вирізає останній елемент в масиві та показує його, якщо логнути
-console.log(arr);
-
-console.log(arr.unshift('!!')); // додає елемент на початок масиву та показує його якщо логнути
-console.log(arr);
-
-console.log(arr.shift()); //видаляє перший елемент з масиву та показує його якщо логнути
-console.log(arr);
-
-let join = arr.join(); // з'єдную кожен елемент масиву по дефолту комою
-console.log(join);
-
-let nums = [11,22,33]; //
-let concat = arr.concat(nums); // викликаємо конкат та додаємо до масива новий масив
-console.log(concat); // повертається з'єднаний новий масив
-console.log(arr); // старий масив залишається незміненим
-
-console.log(nums.reverse()); // перевертає масив
-
-console.log(concat);
-console.log(concat.slice(0,4)); // вирізає елементи масиву
-console.log(concat); // оригінальній масив не змінюється
-
-// let splice = concat.splice(0,2, '!!!','!!!','!!!',); //дозволяє видаляти елементи з масиву, 1 та другий аргумент =
-// // звідки починати та до куди йти, 3 аргумент = що добавити замість видалених елементів.
-// console.log(splice);
+// let arr = [];
+// console.log(Array.isArray(arr)); // перевірка чи є цей масив масивом
+// arr.push(123);
+// arr.push(44);
+// arr.push(44);
+// arr.push(44);
+// console.log(arr);
+//
+// console.log(arr.pop()); // вирізає останній елемент в масиві та показує його, якщо логнути
+// console.log(arr);
+//
+// console.log(arr.unshift('!!')); // додає елемент на початок масиву та показує його якщо логнути
+// console.log(arr);
+//
+// console.log(arr.shift()); //видаляє перший елемент з масиву та показує його якщо логнути
+// console.log(arr);
+//
+// let join = arr.join(); // з'єдную кожен елемент масиву по дефолту комою
+// console.log(join);
+//
+// let nums = [11,22,33]; //
+// let concat = arr.concat(nums); // викликаємо конкат та додаємо до масива новий масив
+// console.log(concat); // повертається з'єднаний новий масив
+// console.log(arr); // старий масив залишається незміненим
+//
+// console.log(nums.reverse()); // перевертає масив
+//
 // console.log(concat);
+// console.log(concat.slice(0,4)); // вирізає елементи масиву
+// console.log(concat); // оригінальній масив не змінюється
+//
+// // let splice = concat.splice(0,2, '!!!','!!!','!!!',); //дозволяє видаляти елементи з масиву, 1 та другий аргумент =
+// // // звідки починати та до куди йти, 3 аргумент = що добавити замість видалених елементів.
+// // console.log(splice);
+// // console.log(concat);
+//
+// console.log(concat);
+// console.log(concat.indexOf(11)); // дозволяє побачити під яким індексом стоїть названий елемент у аргументі
+// console.log(concat);
+// concat.splice(3,1) // дозволяє видалити елемент, 1 число = індекс з якого починати, 2 число = скільки елементів
+// видалити console.log(concat);  console.log(concat.includes(22)); // видає або тру або фолс відходячи від того чи є
+// такий елемент у масиві console.log(concat.includes(11)); //
 
-console.log(concat);
-console.log(concat.indexOf(11)); // дозволяє побачити під яким індексом стоїть названий елемент у аргументі
-console.log(concat);
-concat.splice(3,1) // дозволяє видалити елемент, 1 число = індекс з якого починати, 2 число = скільки елементів видалити
-console.log(concat);
+// array function callback
 
-console.log(concat.includes(22)); // видає або тру або фолс відходячи від того чи є такий елемент у масиві
-console.log(concat.includes(11)); //
+// let users = [{
+//     id:1, name: 'John', age: 33, status: true
+// },{
+//     id:2, name: 'Jowwwwhn', age: 22, status: true
+// },{
+//     id:3, name: 'eeeee', age: 123, status: false
+// },{
+//     id:4, name: 'fffff', age: 3333, status: true
+// },{
+//     id:5, name: 'aSaasSsasa', age: 445, status: false
+// },{
+//     id:6, name: 'aghghghasa', age: 445, status: false
+// },{
+//     id:7, name: 'adffdfdasa', age: 445, status: true
+// },{
+//     id:8, name: 'eweweewa', age: 445, status: true
+// },{
+//     id:9, name: 'asadfdffd', age: 445, status: true
+// },{
+//     id:10, name: 'gghghhghgasa', age: 445, status: true
+// },{
+//     id:11, name: 'afdfdfdasasa', age: 445, status: true
+// },
+// ];
+
+// forEach function:
+// users.forEach(value => console.log(value));
+//
+// users.forEach((value, index) => console.log(value,index));
+//
+// users.forEach((value, index,array) => console.log(value,index,array));
+//
+// users.forEach(function (value) {
+//     console.log(value);
+// })
+
+// filter function
+// let filteredUsers = users.filter(value => !value.status)
+// console.log(filteredUsers);
+//
+// let filteredUsers = users.filter(function(value){
+//     return value.age>19;
+// });
+// console.log(filteredUsers);
+
+// let users = [{
+//     name: 'John', age: 33, status: true
+// }, {
+//     name: 'Jowwwwhn', age: 22, status: true
+// }, {
+//     name: 'eeeee', age: 123, status: false
+// }, {
+//     name: 'fffff', age: 3333, status: true
+// }, {
+//     name: 'aSaasSsasa', age: 445, status: false
+// }, {
+//     name: 'aghghghasa', age: 445, status: false
+// }, {
+//     name: 'adffdfdasa', age: 445, status: true
+// }, {
+//     name: 'eweweewa', age: 445, status: true
+// }, {
+//     name: 'asadfdffd', age: 445, status: true
+// }, {
+//     name: 'gghghhghgasa', age: 445, status: true
+// }, {
+//     name: 'afdfdfdasasa', age: 445, status: true
+// },
+// ];
+// map function
+// let mappedUsers = users.map(function (value, index) {
+//         return {
+//             name: value.name, age: value.age, status: value.status,
+//             id: index + 1
+//         }
+//     });
+// console.log(mappedUsers);
+//
+// let mappedUsers = users.map(function (value, index) {
+//         return {...value, id:index+1
+//         }
+//     });
+// console.log(mappedUsers);
+//
+// let mappedUsers = users.map((value,index) => {
+//     return {id:index + 1, name: value.name, age: value.age, status: value.status
+//     }
+// });
+// console.log(mappedUsers);
