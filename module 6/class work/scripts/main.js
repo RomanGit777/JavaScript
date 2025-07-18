@@ -70,30 +70,29 @@
 
 // array function callback
 
-// let users = [{
-//     id:1, name: 'John', age: 33, status: true
-// },{
-//     id:2, name: 'Jowwwwhn', age: 22, status: true
-// },{
-//     id:3, name: 'eeeee', age: 123, status: false
-// },{
-//     id:4, name: 'fffff', age: 3333, status: true
-// },{
-//     id:5, name: 'aSaasSsasa', age: 445, status: false
-// },{
-//     id:6, name: 'aghghghasa', age: 445, status: false
-// },{
-//     id:7, name: 'adffdfdasa', age: 445, status: true
-// },{
-//     id:8, name: 'eweweewa', age: 445, status: true
-// },{
-//     id:9, name: 'asadfdffd', age: 445, status: true
-// },{
-//     id:10, name: 'gghghhghgasa', age: 445, status: true
-// },{
-//     id:11, name: 'afdfdfdasasa', age: 445, status: true
-// },
-// ];
+let users = [{
+    id: 1, name: 'John', age: 33, status: true
+}, {
+    id: 2, name: 'John', age: 22, status: true
+}, {
+    id: 3, name: 'eeeee', age: 23, status: false
+}, {
+    id: 4, name: 'fffff', age: 33, status: true
+}, {
+    id: 5, name: 'aSaasSsasa', age: 41, status: false
+}, {
+    id: 6, name: 'aghghghasa', age: 22, status: false
+}, {
+    id: 7, name: 'adffdfdasa', age: 21, status: true
+}, {
+    id: 8, name: 'eweweewa', age: 25, status: true
+}, {
+    id: 9, name: 'asadfdffd', age: 35, status: true
+}, {
+    id: 10, name: 'gghghhghgasa', age: 37, status: true
+}, {
+    id: 11, name: 'afdfdfdasasa', age: 31, status: true
+}];
 
 // forEach function:
 // users.forEach(value => console.log(value));
@@ -139,6 +138,7 @@
 //     name: 'afdfdfdasasa', age: 445, status: true
 // },
 // ];
+
 // map function
 // let mappedUsers = users.map(function (value, index) {
 //         return {
@@ -159,3 +159,34 @@
 //     }
 // });
 // console.log(mappedUsers);
+
+// function find
+// let find = users.find(value => value.name === 'John');
+// console.log(find);
+
+// console.log(users.every(value => value.status)); // якщо хоча б один юзер буде мати фолс, воно повернеть фолс
+// console.log(users.some(value => value.status)); // якщо хоч один юзер з масиву буде мати статус тру, повернеться тру.
+
+// let sort = users.sort((u1, u2) =>{
+//     return u2.age - u1.age;  // порівняє вік юзерів та посортує від більшого к меншому, від меншого до більшого =
+// u1-u2 }); console.log(sort);  console.log(users.sort((a,b)=>{ if(a.name>b.name){ // порівнює вагу кожного юзера,
+// більш важкий юзер йде вниз, легший юзер йде до верху return 1; } if(a.name<b.name){ return -1; }
+// if(b.name===b.name){ return 0; } }));
+
+// console.log(users.reduce((accumulator, user) => {
+//     if(user.status){
+//         accumulator.statT.push(user)
+//     }else {
+//         accumulator.statF.push(user)
+//     }
+//     return accumulator;
+// },{statT:[], statF:[]}))
+
+function calc(a,b,callback){
+    return callback(a,b)
+}
+console.log(calc(10, 20, (a, b) => {
+return a + b;
+}));
+console.log(calc(10, 20, (a, b) => a - b));
+console.log(calc(10, 20, (a, b) =>  a / b));
