@@ -70,29 +70,29 @@
 
 // array function callback
 
-let users = [{
-    id: 1, name: 'John', age: 33, status: true
-}, {
-    id: 2, name: 'John', age: 22, status: true
-}, {
-    id: 3, name: 'eeeee', age: 23, status: false
-}, {
-    id: 4, name: 'fffff', age: 33, status: true
-}, {
-    id: 5, name: 'aSaasSsasa', age: 41, status: false
-}, {
-    id: 6, name: 'aghghghasa', age: 22, status: false
-}, {
-    id: 7, name: 'adffdfdasa', age: 21, status: true
-}, {
-    id: 8, name: 'eweweewa', age: 25, status: true
-}, {
-    id: 9, name: 'asadfdffd', age: 35, status: true
-}, {
-    id: 10, name: 'gghghhghgasa', age: 37, status: true
-}, {
-    id: 11, name: 'afdfdfdasasa', age: 31, status: true
-}];
+// let users = [{
+//     id: 1, name: 'John', age: 33, status: true
+// }, {
+//     id: 2, name: 'John', age: 22, status: true
+// }, {
+//     id: 3, name: 'eeeee', age: 23, status: false
+// }, {
+//     id: 4, name: 'fffff', age: 33, status: true
+// }, {
+//     id: 5, name: 'aSaasSsasa', age: 41, status: false
+// }, {
+//     id: 6, name: 'aghghghasa', age: 22, status: false
+// }, {
+//     id: 7, name: 'adffdfdasa', age: 21, status: true
+// }, {
+//     id: 8, name: 'eweweewa', age: 25, status: true
+// }, {
+//     id: 9, name: 'asadfdffd', age: 35, status: true
+// }, {
+//     id: 10, name: 'gghghhghgasa', age: 37, status: true
+// }, {
+//     id: 11, name: 'afdfdfdasasa', age: 31, status: true
+// }];
 
 // forEach function:
 // users.forEach(value => console.log(value));
@@ -182,11 +182,40 @@ let users = [{
 //     return accumulator;
 // },{statT:[], statF:[]}))
 
-function calc(a,b,callback){
-    return callback(a,b)
+// function calc(a,b,callback){
+//     return callback(a,b)
+// }
+// console.log(calc(10, 20, (a, b) => {
+// return a + b;
+// }));
+// console.log(calc(10, 20, (a, b) => a - b));
+// console.log(calc(10, 20, (a, b) =>  a / b));
+
+function filter(arr, callback) { // define a function which will take 2 arguments: array and function
+    let mass = []; // our exit array
+    // debugger;
+    for (const item of arr) {  //iteration to every item from array we will get
+        if (callback(item)) {
+            mass.push(item);  // if function give you true, item will go to our exit array
+        }
+    }
+    return mass;  // return our exit array to see result
 }
-console.log(calc(10, 20, (a, b) => {
-return a + b;
-}));
-console.log(calc(10, 20, (a, b) => a - b));
-console.log(calc(10, 20, (a, b) =>  a / b));
+
+console.log(filter([11, 22, 33, 44, 55], item => item % 2 === 0)); // print and give arr, also call the function and
+// give task to it
+
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
+console.log(filter(users, user => user.age > 30));
