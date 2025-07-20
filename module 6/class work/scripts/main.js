@@ -191,31 +191,31 @@
 // console.log(calc(10, 20, (a, b) => a - b));
 // console.log(calc(10, 20, (a, b) =>  a / b));
 
-function filter(arr, callback) { // define a function which will take 2 arguments: array and function
-    let mass = []; // our exit array
-    // debugger;
-    for (const item of arr) {  //iteration to every item from array we will get
-        if (callback(item)) {
-            mass.push(item);  // if function give you true, item will go to our exit array
-        }
-    }
-    return mass;  // return our exit array to see result
-}
-
-console.log(filter([11, 22, 33, 44, 55], item => item % 2 === 0)); // print and give arr, also call the function and
-// give task to it
-
-let users = [
-    {name: 'vasya', age: 31, status: false},
-    {name: 'petya', age: 30, status: true},
-    {name: 'kolya', age: 29, status: true},
-    {name: 'olya', age: 28, status: false},
-    {name: 'max', age: 30, status: true},
-    {name: 'anya', age: 31, status: false},
-    {name: 'oleg', age: 28, status: false},
-    {name: 'andrey', age: 29, status: true},
-    {name: 'masha', age: 30, status: true},
-    {name: 'olya', age: 31, status: false},
-    {name: 'max', age: 31, status: true}
-];
-console.log(filter(users, user => user.age > 30));
+// function filter(arr, callback) { // define a function which will take 2 arguments: array and function
+//     let mass = []; // our exit array
+//     // debugger;
+//     for (const item of arr) {  //iteration to every item from array we will get
+//         if (callback(item)) {
+//             mass.push(item);  // if function give you true, item will go to our exit array
+//         }
+//     }
+//     return mass;  // return our exit array to see result
+// }
+//
+// console.log(filter([11, 22, 33, 44, 55], item => item % 2 === 0)); // print and give arr, also call the function and
+// // give task to it
+//
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+// console.log(filter(users, user => user.age > 30));
