@@ -21,10 +21,10 @@ const coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-// const map1 = coursesAndDurationArray
-//     .sort((a, b) => b.monthDuration - a.monthDuration)
-//     .filter(value => value.monthDuration > 5)
-//     .map((value, index) => ({...value, id: index + 1}));
-// console.log(map1);
+const map1 = coursesAndDurationArray
+    .sort((a, b) => b.monthDuration - a.monthDuration)
+    .filter(value => value.monthDuration > 5)
+    .map((value, index) => ({...value, id: index + 1}));
+console.log(map1);
 
 
