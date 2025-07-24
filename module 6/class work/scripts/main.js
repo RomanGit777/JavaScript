@@ -94,9 +94,9 @@
 //     id: 11, name: 'afdfdfdasasa', age: 31, status: true
 // }];
 
-// forEach function:
+// // forEach function:
 // users.forEach(value => console.log(value));
-//
+
 // users.forEach((value, index) => console.log(value,index));
 //
 // users.forEach((value, index,array) => console.log(value,index,array));
