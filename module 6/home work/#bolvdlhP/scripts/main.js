@@ -16,26 +16,20 @@
     const cardSuits = ['spade', 'diamond', 'heart', 'clubs'];
     const values = ['6','7','8','9','10','jack','queen','king','ace'];
     const deck = [];
-     // for (let suit of cardSuits) {
-     //     for (let value of values) {
-     //        let color = (suit === 'diamond' || suit === 'heart') ? 'red' : 'black'
-     //     deck.push({ cardSuit: suit, value: value, color: color })
-     //     }}
-     // console.log(deck);
+     for (let suit of cardSuits) {
+         for (let value of values) {
+            let color = (suit === 'diamond' || suit === 'heart') ? 'red' : 'black'
+         deck.push({ cardSuit: suit, value: value, color: color })
+         }}
+     console.log(deck);
 
-// //     – знайти піковий туз
-// console.log(deck.find(card => card.cardSuit === 'spade' && card.value === 'ace'));
-// //  – всі шістки
-// console.log(deck.filter(card => card.value === '6'));
-// //  – всі червоні карти
-// console.log(deck.filter(card => card.color === 'red'));
-// //  – всі буби
-// console.log(deck.filter(card => card.cardSuit === 'diamond'));
-// //  – всі трефи від 9 та більше
-// console.log(deck.filter(card => card.cardSuit === 'clubs' && ['9','10','jack','queen','king','ace'].includes(card.value)));
-
-for (const suit of cardSuits) {
-    for (const value of values) {
-        let color = ()
-    }
-}
+ //     – знайти піковий туз
+console.log(deck.find(card => card.cardSuit === 'spade' && card.value === 'ace'));
+//  – всі шістки
+console.log(deck.filter(card => card.value === '6'));
+//  – всі червоні карти
+console.log(deck.filter(card => card.color === 'red'));
+//  – всі буби
+console.log(deck.filter(card => card.cardSuit === 'diamond'));
+//  – всі трефи від 9 та більше
+console.log(deck.filter(card => card.cardSuit === 'clubs' && ['9','10','jack','queen','king','ace'].includes(card.value)));
