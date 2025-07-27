@@ -16,29 +16,15 @@ for (let suit of cardSuits) {
         deck.push({ cardSuit: suit, value: value, color: color })
     }}
 console.log(deck);
-// debugger;
-// console.log(deck.reduce((acc, card) => { // acc is our new object
-//     if (card.cardSuit === 'spade') {  // all if to check is card parameter match with that we wrote
-//         acc.spades.push(card)
-//     } else if(card.cardSuit === 'diamond') {
-//         acc.diamonds.push(card)
-//     } else if(card.cardSuit === 'heart') {
-//         acc.hearts.push(card)
-//     } else if(card.cardSuit === 'clubs') {
-//         acc.clubs.push(card)
-//     }
-//     return acc; // return our new object "acc"
-// }, {spades: [], diamonds: [], hearts: [], clubs: []})); //new object is fulled by matched items
-
-console.log(deck.reduce((accumulator, card) => {
+console.log(deck.reduce((acc, card) => {
     if (card.cardSuit === 'spade') {
-        accumulator.spades.push(card);
+        acc.spades.push(card)
     } else if (card.cardSuit === 'diamond') {
-        accumulator.diamonds.push(card);
+        acc.diamonds.push(card)
     } else if (card.cardSuit === 'heart') {
-        accumulator.hearts.push(card);
+        acc.hearts.push(card)
     } else if (card.cardSuit === 'clubs') {
-        accumulator.clubs.push(card);
+        acc.clubs.push(card)
     }
-    return accumulator;
+    return acc;
 }, {spades: [], diamonds: [], hearts: [], clubs: []}));
