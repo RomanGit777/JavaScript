@@ -25,3 +25,14 @@
 // }
 // let user1 = new User('vasya', 22, true, 'larisa',20,true);
 // console.log(user1);
+
+// let user = {name: 'vasya', age: 32, status: true};
+// user.greeting = () =>  `hello ${this.name}`;
+// console.log(user.greeting());
+
+function User(name,age,status){
+    this.name = name;
+    this.age = age;
+    this.status = status;
+}
+console.log(User);
