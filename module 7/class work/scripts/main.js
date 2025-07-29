@@ -30,9 +30,21 @@
 // user.greeting = () =>  `hello ${this.name}`;
 // console.log(user.greeting());
 
-function User(name,age,status){
+function User(name,age,){
     this.name = name;
     this.age = age;
-    this.status = status;
 }
+//
+// let user = new User('vasya', 31);
+// user.greeting = function(){
+//     console.log('hi!')
+// };
+// console.log(user);
+// user.greeting();
+
 console.log(User);
+User.prototype.greeting = function () {
+    return `Hello my name is ${this.name}!`;
+};
+let user = new User('vasya',31);
+console.log(user.greeting());
