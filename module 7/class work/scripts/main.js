@@ -218,3 +218,37 @@
 // console.log(set);
 // let numbers = Array.from(set);
 // console.log(numbers);
+
+// map
+// let map = new Map();
+// console.log(map);
+// map.set(1, 'one');
+// map.set(2, 'two');
+// map.set(3, 'three');
+// console.log(map);
+// let map = new Map();
+// console.log(map);
+// map.set('bomj', {name:'oleg', surname: 'olegovich'});
+// map.set('oligator', {name:'petr', surname: 'oligatorov'});
+// console.log(map.get('bomj'));
+let map = new Map();
+console.log(map);
+let Bomj = {id:'Bomj'};
+let oligator = {id: 'oligator'};
+
+map.set(Bomj, {name:'oleg', surname: 'olegovich'});
+map.set(oligator, {name:'petr', surname: 'oligatorov'});
+
+console.log(map.get(Bomj)); // here's an example how to find our map if our key is an object
+console.log(map.get(oligator));
+
+// map.delete(Bomj);
+// console.log(map);
+// map.clear();
+// console.log(map);
+console.log(map.size);
+console.log(map.keys());
+let from = Array.from(map.keys());
+console.log(from);
+console.log(map.values());
+console.log(Array.from(map.values()));
