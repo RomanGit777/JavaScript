@@ -70,3 +70,57 @@
 // let user3 = new User('John', 19, true, 'olya', 20, true);
 // console.log(user3);
 // user3.greeting();
+
+// function User (name,age){
+//     this.name = name;
+//     this.age = age;
+// }
+// User.prototype.greeting = function () {
+//     return `Hi my name is : ${this.name}`;
+// };
+// let user1 = new User("John",22);
+// console.log(user1);
+// console.log(user1.greeting());
+// let user2 = new User("Ojhn",23);
+// console.log(user2);
+// console.log(user2.greeting());
+// let user3 = new User("Opre",21);
+// console.log(user3);
+// console.log(user3.greeting());
+
+// function User (name,age){
+//     this.name = name;
+//     this.age = age;
+// }
+// let user = new User('Vasya',22);
+// user.greeting = function (msg,msg2){
+//     return `${msg} ${msg2}  name is ${this.name}`
+// }
+// console.log(user);
+// console.log(user.greeting('Hello','my'));
+//
+// let user2 = new User('Vasya2',23);
+// console.log(user2);
+// console.log(user.greeting.apply(user2,['Hello','my']));
+//
+// let user3 = new User('Vasya3',24);
+// console.log(user3);
+// // console.log(user.greeting.apply(user3,['Hello','my']));
+// console.log(user.greeting.call(user3,'Kran','my'));
+
+// function User (name,age){
+//     this.name = name;
+//     this.age = age;
+// }
+//
+// let user = new User('Vasya',22);
+// user.greeting = function (msg){
+//     return `${msg} my name is ${this.name}`
+// }
+// console.log(user);
+// console.log(user.greeting('Hello'));
+//
+// let user2 = new User('Vasya2',23);
+// console.log(user2);
+// let greetingCopy = user.greeting.bind(user2);
+// console.log(greetingCopy('Hello'));
