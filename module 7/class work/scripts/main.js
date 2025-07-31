@@ -124,3 +124,52 @@
 // console.log(user2);
 // let greetingCopy = user.greeting.bind(user2);
 // console.log(greetingCopy('Hello'));
+
+// class User{
+//
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     // static greeting(){
+//     //     return `hello my name is ${this.name}`;
+//     // }
+//      work(){
+//         return `work in process`;
+//     }
+// }
+// // let user = new User('vasya',31);
+// // console.log(user);
+// // console.log(user.greeting());
+// // console.log(User.work());
+//
+// class Customer extends User{
+//
+//     constructor(name, age, password) {
+//         super(name, age);
+//         this.password = password;
+//     }
+//
+//     work() {
+//         return super.work();
+//     }
+// }
+//
+// let costumer = new Customer('vasya', 22, '111');
+// console.log(costumer);
+// console.log(costumer.work());
+
+// function User(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+//
+// function Costumer(name, age, password) {
+//     User.apply(this, arguments);
+//     this.password = password;
+// }
+//
+// let costumer = new Costumer('vasya', 31, '444');
+// console.log(costumer);
+// let user = new User('vasya', 31, '444');
+// console.log(user);
