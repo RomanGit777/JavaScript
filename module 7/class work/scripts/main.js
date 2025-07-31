@@ -173,3 +173,48 @@
 // console.log(costumer);
 // let user = new User('vasya', 31, '444');
 // console.log(user);
+
+// data
+// let now = new Date();
+// console.log(now);
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDay());
+// console.log(now.getHours());
+// console.log(now.getMinutes());
+// console.log(now.getSeconds());
+// console.log(now.getMilliseconds());
+// console.log(now.getTime());
+//
+// // let date1 = new Date(1767205770119);
+// // let date1 = new Date('June 10 1991 12:30:34');
+// // let date1 = new Date(1987,0,30,12,30,50,0);
+// // console.log(date1);
+// console.log(now.setMonth(11));
+//
+// let user = {
+//     id:1,
+//     name: 'vasya',
+//     bday: new Date(1767205770119)
+// }
+// console.log(user);
+
+// set
+// let set = new Set();
+// set.add('asd');
+// set.add('asd');
+// set.add('qwe');
+// set.add('xxx');
+// console.log(set);
+// console.log(set.has('xxx'));
+// console.log(set.delete('xxx'));
+// console.log(set);
+// console.log(set.size);
+// set.forEach(value => console.log(value));
+// let arrayFromSet = Array.from(set);
+// console.log(arrayFromSet);
+//
+// let set = new Set([11,22,33,44,44,55,66]);
+// console.log(set);
+// let numbers = Array.from(set);
+// console.log(numbers);
