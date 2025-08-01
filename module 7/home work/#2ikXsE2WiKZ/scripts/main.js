@@ -7,7 +7,6 @@ function User(id, name, surname, email, phone) {
     this.email = email;
     this.phone = phone;
 }
-
 let users = [
     new User(1, 'vasya','olekseev','eproerop@gmail.com','+12313'),
     new User(2, 'fdfd','fdfdf','fdfd@gmail.com','+2323'),
@@ -20,4 +19,8 @@ let users = [
     new User(9, 'trtr','fgfgf','jkkjkj@gmail.com','+4554455'),
     new User(10, 'qwe','ert','fgf@gmail.com','+21323213'),
 ];
+
+const filterUsers = users.filter((user) => user.id % 2 === 0);
+console.log(filterUsers);
+
 
