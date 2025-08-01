@@ -1,5 +1,5 @@
 // #2ikXsE2WiKZ
-// – Взяти масив з  User[] з попереднього завдання, та відфільтрувати, залишивши тільки об’єкти з парними id (filter)
+// – Взяти масив з User[] з попереднього завдання, та відфільтрувати, залишивши тільки об’єкти з парними id (filter)
 function User(id, name, surname, email, phone) {
     this.id = id;
     this.name = name;
@@ -20,7 +20,6 @@ let users = [
     new User(10, 'qwe','ert','fgf@gmail.com','+21323213'),
 ];
 
-const filterUsers = users.filter((user) => user.id % 2 === 0);
-console.log(filterUsers);
+console.log(users.filter((user) => user.id % 2 === 0));
 
 
