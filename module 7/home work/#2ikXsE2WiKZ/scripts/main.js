@@ -17,7 +17,7 @@ let users = [
     new User(7, 'fggfg','hjjhhj','hghg@gmail.com','+7676'),
     new User(8, 'dffdfd','dgdfd','dddsds@gmail.com','+4344366'),
     new User(9, 'trtr','fgfgf','jkkjkj@gmail.com','+4554455'),
-    new User(10, 'qwe','ert','fgf@gmail.com','+21323213'),
+    new User(10, 'qwe','ert','fgf@gmail.com','+21323213')
 ];
 
 console.log(users.filter((user) => user.id % 2 === 0));
