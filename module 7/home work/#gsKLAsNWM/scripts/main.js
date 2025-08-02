@@ -1,18 +1,17 @@
 // #gsKLAsNWM
 // *Через Array.prototype. створити власний foreach, filter
 
-
-Array.prototype.myForEach = function (callback) { //define a function which gonna..
-    for (let i = 0; i < this.length; i++) { // use for to loop through arr we're going to give in
-        callback(this[i], i, this) // we do a callback and loop through each current item, each index in the array
-        // and whole array
+Array.prototype.myForEach = function (callback) {
+    for (let i = 0; i < this.length; i++) {
+        callback(this[i], i, this);
     }
 };
+let fruits = ['apple', 'pear', 'banana'];
+fruits.myForEach((item, index) => console.log(item, index));
+console.log('')
+let vegetables = ['pepper', 'broccoli', 'potato'];
+vegetables.myForEach((item,index)=>console.log(item, index));
 
-let fruits = ['apple', 'banana', 'cherry'];
-let vegetables = ['potato', 'tomato', 'broccoli'];
+Array.prototype.myFilter = function (callback){
 
-fruits.myForEach((item, index) => console.log(`item at index ${index}: ${item}`));
-// here we give to parameters, and then print them
-console.log('');
-vegetables.myForEach((item, index) => console.log(`item at index ${index}: ${item}`));
+}
