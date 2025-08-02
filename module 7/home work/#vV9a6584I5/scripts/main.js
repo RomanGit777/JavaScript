@@ -15,7 +15,7 @@ function Car(model,producer,year,maxSpeed,engineVolume){
     this.engineVolume = engineVolume;
 
     this.drive = function(){
-        console.log(`їдемо зі швидкістю ${maxSpeed} на годину`);
+        console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
     };
 
     this.info = function(){

@@ -14,31 +14,31 @@ class Car{
         this.year = year;
         this.maxSpeed = maxSpeed;
         this.engineVolume = engineVolume;
-
-        this.drive = function(){
-            console.log(`їдемо зі швидкістю ${maxSpeed} на годину`)
-        };
-
-        this.info = function(){
-            for (const key in this) {
-                console.log(key, this[key]);
-            }
-        };
-
-        this.increaseMaxSpeed = function(speedToAdd){
-            if(this.maxSpeed > 0) this.maxSpeed = this.maxSpeed + speedToAdd;
-        };
-
-        this.changeYear = function(year){
-            if(this.year > 1815) this.year = year;
-        };
-
-        this.driver = function(driver){
-            if(driver) this.driver = driver;
-        };
     };
-}
-let car = new Car('qwe','qwef',1999,130,120);
+
+    drive(){
+        console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`)
+    };
+
+    info(){
+        for (const key in this) {
+            console.log(key, this[key]);
+        }
+    };
+
+    increaseMaxSpeed(speedToAdd){
+        if(this.maxSpeed > 0) this.maxSpeed = this.maxSpeed + speedToAdd;
+    };
+
+    changeYear(year){
+        if(this.year > 1815) this.year = year;
+    };
+
+    driver (driver){
+        if(driver) this.driver = driver;
+    };
+}8
+const car = new Car('qwe','qwef',1999,130,120);
 console.log(car);
 car.drive();
 car.info();
