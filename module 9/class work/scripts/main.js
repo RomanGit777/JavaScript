@@ -66,3 +66,44 @@
 //     divEl.toggle = 'poooint';
 //     divEl.style.backgroundColor = 'red';
 // }
+
+// let allUsersDiv = document.getElementsByClassName('users')[0];
+// // console.log(allUsersDiv);
+// let users = [
+//         {name: 'qwe0', age: 22, status: true},
+//         {name: 'qwe1', age: 22, status: true},
+//         {name: 'qwe2', age: 22, status: true},
+//         {name: 'qwe3', age: 22, status: true},
+//         {name: 'qwe4', age: 22, status: true},
+//         {name: 'qwe5', age: 22, status: true},
+//         {name: 'qwe6', age: 22, status: true},
+// ];
+// for (const user of users) {
+//     let li = document.createElement('li');
+//     li.classList.add('user');
+//     // console.log(div)
+//     li.innerText = user.name;
+//     allUsersDiv.appendChild(li);
+// }
+
+// let users = [
+//     {name: 'qwe0', age: 22, status: true},
+//     {name: 'qwe1', age: 22, status: true},
+//     {name: 'qwe2', age: 22, status: true},
+//     {name: 'qwe3', age: 22, status: true},
+//     {name: 'qwe4', age: 22, status: true},
+//     {name: 'qwe5', age: 22, status: true},
+//     {name: 'qwe6', age: 22, status: true},
+// ];
+// for (const user of users) {
+//     let infoDiv = document.createElement('div');
+//
+//     let h2 = document.createElement('h2')
+//     h2.innerText = user.name;
+//     let p = document.createElement('p')
+//     p.innerText = user.age + ' ' + user.status;
+//
+//     infoDiv.append(h2,p);
+//     document.body.appendChild(infoDiv);
+// }
+
