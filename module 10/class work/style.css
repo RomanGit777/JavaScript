@@ -3,3 +3,11 @@
 /*    height: 200px;*/
 /*    background-color: silver;*/
 /*}*/
+
+.products img{
+    width: 200px;
+}
+.products button{
+    display: block;
+    width: 200px;
+}

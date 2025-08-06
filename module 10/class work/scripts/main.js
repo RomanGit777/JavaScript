@@ -97,3 +97,74 @@
 // users.push({});
 // console.log(users);
 // localStorage.setItem('users', JSON.stringify(users));
+
+// localStorage.clear();
+const productsDiv = document.getElementsByClassName('products')[0];
+console.log(productsDiv);
+let products = [
+
+    {
+
+        title: `milk`,
+
+        price: 22,
+
+        image: `https://www.firstchoiceproduce.com/wp-content/uploads/2020/03/whole-milk-800x800.jpg`
+
+    },
+
+    {
+
+        title: `juice`,
+
+        price: 27,
+
+        image: `https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg`
+
+    },
+
+    {
+
+        title: `tomato`,
+
+        price: 47,
+
+        image: `https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74`
+
+    },
+
+    {
+
+        title: `tea`,
+
+        price: 15,
+
+        image: `https://th.bing.com/th/id/OIP.TMzrhqhf5sBJhcpcSx_O4QHaFj?r=0&o=7rm=3&rs=1&pid=ImgDetMain&cb=idpwebpc2`
+
+    },
+
+];
+
+for (const product of products) {
+    const productBlock = document.createElement('div');
+
+    const title = document.createElement('h2')
+    title.innerText = `${product.title} ${product.price} UAH`;
+
+    const img = document.createElement('img');
+    img.src = product.image;
+
+    const button = document.createElement('button');
+    button.innerText = 'add to cart';
+
+    button.onclick = function () {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    productBlock.append(title, img, button);
+    productsDiv.appendChild(productBlock);
+}
+// console.log(localStorage.getItem('cart'));
+localStorage.getItem('cart');
